@@ -50,7 +50,7 @@ blgApp.controller('post', function ($scope, $routeParams, blgFactory) {
 
     var slug = $routeParams.slug;
     blgFactory.getPostDetail(slug).then(function (data) {
-        console.log(data);
+       
         $scope.post = data;
         $('#content').html($scope.post.content);
 
