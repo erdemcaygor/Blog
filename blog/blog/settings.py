@@ -75,7 +75,7 @@ CKEDITOR_CONFIGS = {
 }
 
 
-DISQUS_API_KEY = 'enqmWzn7uSwLfAuHkKZuHA7auZBGEeNcJuYebG5b1yK26autOshGlBZ1iLou2lzD'
+DISQUS_API_KEY = '*********'
 DISQUS_WEBSITE_SHORTNAME = 'erdemcaygor.com'
 SITE_ID = 1
 
