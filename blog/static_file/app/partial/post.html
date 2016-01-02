@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="jumbotron">
+            <style type="text/css" rel="stylesheet">
+                p {
+                    font-family: cursive;
+                    font-size: 1em!important;
+                }
+            </style>
+
+            <link rel="stylesheet"
+                  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
+            <div class="container">
+                <div class="media-body">
+                    <h4 class="media-heading">{{ post.title }}</h4>
+
+                    <p class="text-right">{{ post.created_date|date:"dd/MM/yyyy" }}</p>
+
+                    <div id="content"></div>
+                    <ul class="list-inline list-unstyled">
+                         <span style="padding-left: 5px">Etiketler:</span>
+                         <li ng-repeat="tag in tags"><a class="tag-style" href="#!/tag/{{ tag.slug }}/">{{ tag.name }}</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript-lazy" src="/static/lib/js/prettify/prettify.js"></script>
+        <script type="text/javascript-lazy" src="/static/lib/js/prettify_run.js"></script>
+        <script type="text/javascript-lazy" src="/static/lib/js/navigationlink.js"></script>
+
+    <dir-disqus disqus-shortname="erdemcaygor"
+                    disqus-identifier={{scope.Title}}
+                    disqus-title={{scope.Title}}
+                    disqus-url={{scope.url}}
+                    readytobind="true">
+        </dir-disqus>
+</div>

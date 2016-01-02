@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="jumbotron">
+
+            <div class="container">
+
+                <form class="form-signin" name="contactForm" id="contactForm" ng-submit="send()">
+                    <h3>İletişim Formu</h3>
+                    <label for="Email">Email Adresi</label>
+                    <input type="email" id="Email" name="Email" class="form-control" ng-model="message.email" placeholder="Email Adresiniz">
+
+                    <label for="Subject">Konu</label>
+                    <input type="text" id="Subject" class="form-control" name="Subject" placeholder="Konu" ng-model="message.subject">
+
+
+                    <label for="Content">Mesaj</label>
+                    <textarea id="Content" class="form-control" placeholder="İçerik" rows="4" name="Content"
+                              ng-model="message.content"></textarea>
+                    <br>
+                    <button class="btn btn-lg btn-primary"  type="submit">Gönder</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script type="text/javascript-lazy" src="/static/lib/js/jquery.validate.min.js"></script>
+    <script type="text/javascript-lazy" src="/static/lib/js/messageFormValidation.js"></script>
+    <script type="text/javascript-lazy" src="/static/lib/js/navigationlink.js"></script>
+    <script type="text/javascript-lazy" src="/static/lib/js/sweet-alert.min.js"></script>
+</div>

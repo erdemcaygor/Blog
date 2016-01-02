@@ -1,0 +1,33 @@
+
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="jumbotron">
+          <div class="container">
+		<div class="row">
+			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+				<ul class="event-list">
+
+					<li class="post-style" ng-repeat="post in posts" style="box-shadow: 5px 5px 5px gray">
+						<time datetime="2014-07-20 0000">
+							<span class="day">{{ post.created_date|date:"dd" }}</span>
+							<span class="month">{{ post.created_date|date:'MMMM' }}</span>
+							<span class="year">{{ post.created_date|date:'yyyy' }}</span>
+						</time>
+						<div class="info">
+							<h2 class="title"><a href="#!/post/{{ post.slug }}/" style="color: darkcyan">{{ post.title }}</a></h2>
+							<p class="desc"></p>
+							<ul>
+								<li style="width:50%;"><a href="#!/kategori/{{ post.category.slug }}/"><span class="fa fa-globe"></span> Kategori: {{ post.category.name }}</a></li>
+							</ul>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    </div>
+  </div>
+
+</div>
