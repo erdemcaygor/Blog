@@ -22,8 +22,8 @@ class Category(models.Model):
 
 class postManager(models.Manager):
 
-    def get_query_set(self):
-        return super(postManager, self).get_query_set().filter(is_active=True, is_deleted=False)
+    def get_queryset(self):
+        return super(postManager, self).get_queryset().filter(is_active=True, is_deleted=False)
 
 class Post(models.Model):
 
